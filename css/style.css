@@ -10,7 +10,6 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  height: 10000px;
 }
 .main-btn {
   background-color: var(--red-color);
@@ -66,16 +65,26 @@ body {
   transform: translateX(-50%);
 }
 .icon-holder svg {
-    left: 50%;
-    transform: translateX(-50%);
+  left: 50%;
+  transform: translateX(-50%);
 }
 .icon-holder {
-    height: 202px;
+  height: 202px;
 }
 .features .icon-holder .number {
-    font-size: 12rem;
-    color: var(--section-color);
+  font-size: 12rem;
+  color: var(--section-color);
 }
 .features .icon-holder .icon {
-    color: var(--green-color);
+  color: var(--green-color);
+}
+.Portfolio {
+  background-color: var(--section-color);
+}
+.Portfolio ul li.active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+.Portfolio .row .box {
+    padding: 5px;
 }
