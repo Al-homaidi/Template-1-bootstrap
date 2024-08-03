@@ -17,7 +17,7 @@ body {
 }
 .main-btn:hover {
   background-color: var(--red-color);
-  color: white;
+  color: white !important;
 }
 .navbar {
   background-color: var(--dark-color);
@@ -85,6 +85,15 @@ body {
   background-color: var(--red-color);
   color: var(--yellow-color);
 }
+.Portfolio ul li.active:hover {
+    color: white;
+}
+.Portfolio ul li:not(.active):hover {
+    color: var(--red-color);
+}
+.Portfolio ul li {
+    cursor: pointer;
+}
 .Portfolio .row .box {
   padding: 5px;
   overflow: hidden;
@@ -104,9 +113,6 @@ body {
   font-size: 1.5rem;
   transform: translateX(calc(-100% - 5px));
 }
-.Portfolio .row .box[data-work] {
-    font-size: 40px;
-}
 .Portfolio .row .box:hover::before {
   transform: translateX(0);
 }
@@ -115,4 +121,17 @@ body {
 }
 .about .row .imge img {
   max-width: 100%;
+}
+.team {
+    background-color: var(--section-color);
+}
+.team h2 {
+    color: var(--yellow-color);
+}
+.team .row h4 {
+    background-color: var(--green-color);
+    color: white;
+}
+.team .row p {
+    background-color: #fff;
 }
