@@ -86,13 +86,13 @@ body {
   color: var(--yellow-color);
 }
 .Portfolio ul li.active:hover {
-    color: white;
+  color: white;
 }
 .Portfolio ul li:not(.active):hover {
-    color: var(--red-color);
+  color: var(--red-color);
 }
 .Portfolio ul li {
-    cursor: pointer;
+  cursor: pointer;
 }
 .Portfolio .row .box {
   padding: 5px;
@@ -123,15 +123,66 @@ body {
   max-width: 100%;
 }
 .team {
-    background-color: var(--section-color);
+  background-color: var(--section-color);
 }
 .team h2 {
-    color: var(--yellow-color);
+  color: var(--yellow-color);
 }
 .team .row h4 {
-    background-color: var(--green-color);
-    color: white;
+  background-color: var(--green-color);
+  color: white;
 }
 .team .row p {
-    background-color: #fff;
+  background-color: #fff;
+}
+.project {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+.subscribe {
+  background-color: var(--yellow-color);
+}
+.subscribe input[type="email"],
+.subscribe input[type="email"]:focus {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-color: #fff;
+  outline: none;
+}
+.subscribe input[type="email"]::placeholder {
+  color: #fff;
+}
+.subscribe input[type="submit"] {
+  color: var(--yellow-color);
+  background-color: var(--dark-color);
+}
+.footer {
+  background-color: var(--dark-color);
+}
+.footer .Graphberry {
+  color: var(--green-color);
+}
+.footer .Bondi {
+  color: var(--yellow-color);
+}
+.ContactUs ul li {
+  padding: 10px;
+  border-radius: 50%;
+}
+.ContactUs ul li svg {
+    width: 20px;
+    height: 20px;
+}
+.ContactUs ul li:first-child {
+  background-color: #1877f2;
+}
+.ContactUs ul li:nth-child(2) {
+  background-color: #1da1f2;
+}
+.ContactUs ul li:nth-child(3) {
+  background-color: #0077b5;
+}
+.ContactUs ul li:nth-child(4) {
+  background-color: #ff0000;
 }
