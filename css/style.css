@@ -86,8 +86,33 @@ body {
   color: var(--yellow-color);
 }
 .Portfolio .row .box {
-    padding: 5px;
+  padding: 5px;
+  overflow: hidden;
 }
 .Portfolio .row .box::before {
-    pos
+  content: attr(data-work);
+  position: absolute;
+  background-color: rgb(51 209 204 / 76%);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  transform: translateX(calc(-100% - 5px));
+}
+.Portfolio .row .box[data-work] {
+    font-size: 40px;
+}
+.Portfolio .row .box:hover::before {
+  transform: translateX(0);
+}
+.about .description {
+  max-width: 500px;
+}
+.about .row .imge img {
+  max-width: 100%;
 }
